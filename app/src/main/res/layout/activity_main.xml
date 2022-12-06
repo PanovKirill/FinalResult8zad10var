@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+
+    <ImageView
+        android:id="@+id/cine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:src="@drawable/cine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <TextView
+        android:layout_width="208dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/world_cinema"
+        android:textColor="#A52B2B"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cine"
+        app:layout_constraintVertical_bias="0.6"
+        android:gravity="center"/>
+
+    <EditText
+        android:inputType="text"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:id="@+id/Login"
+        android:layout_width="297dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="92dp"
+        android:autofillHints="username"
+        android:hint="@string/enter_the_login"
+        android:shadowColor="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="#AFAFAF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cine"
+        android:background="@drawable/edittext"/>
+
+    <EditText
+        android:padding="16dp"
+        android:inputType="textPassword"
+        android:id="@+id/Password"
+        android:layout_width="297dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="176dp"
+        android:autofillHints="username"
+        android:hint="@string/enter_the_password"
+        android:textColor="@color/white"
+        android:textColorHint="#AFAFAF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cine"
+        android:background="@drawable/edittext"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="291dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:background="#2B70A8"
+        android:text="@string/Enter"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password"
+        android:onClick="perexod"/>
+
+
+    <Button
+        android:layout_width="290dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.256"
+        android:text="@string/register"
+        android:background="@drawable/edittext"
+        android:textColor="#2B70A8"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
