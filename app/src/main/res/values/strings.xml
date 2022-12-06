@@ -10,6 +10,7 @@
     <string name="hz">Подборка</string>
     <string name="collection">Коллекция</string>
     <string name="profil">Профиль</string>
+    <string name="more">Узнать больше...</string>
 
     <string-array name="cat_names">
         <item>Рыжик</item>

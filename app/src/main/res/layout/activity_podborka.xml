@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".Podborka"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/invbutton">
 
 
     <TextView
         android:id="@+id/textViewLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_x="120dp"
+        android:layout_y="0dp"
+        android:background="@drawable/edittextwh"
+        android:padding="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/purple_200" />
 
     <TextView
         android:id="@+id/textViewSmall"
-        android:layout_width="123dp"
-        android:layout_height="40dp"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:layout_width="53dp"
+        android:layout_height="39dp"
+        android:layout_x="350dp"
+        android:layout_y="40dp"
+
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/purple_200" />
 
     <ImageView
-        android:layout_width="123dp"
-        android:layout_height="74dp"
+        android:id="@+id/ImageFilm"
+        android:layout_width="119dp"
+        android:layout_height="80dp"
+        android:layout_margin="18dp"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_launcher_foreground" />
 
 
-
-
-
-
-
-
-
-</LinearLayout>
+</AbsoluteLayout>

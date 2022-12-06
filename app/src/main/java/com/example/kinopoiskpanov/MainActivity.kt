@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setContentView(R.layout.activity_main)
         login = findViewById(R.id.Login)
         password = findViewById(R.id.Password)
         shared=getSharedPreferences("ACCOUNT_FILMS", MODE_PRIVATE)
@@ -30,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
     }
 
     fun perexod(view: View) {

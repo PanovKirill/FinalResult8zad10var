@@ -6,6 +6,7 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
+
 class podborka2 : AppCompatActivity() {
 
     val list: List<String> = emptyList()
@@ -23,8 +24,8 @@ class podborka2 : AppCompatActivity() {
         recyclerView.adapter = CustomRecyclerAdapter(fillList())
         recyclerView.adapter = CustomRecyclerAdapter(getCatList())
 
-        for(i in 1..10){
-            Filmes = da(Filmes,"Film + $1")
+        for(i in 1..5){
+            Filmes = da(Filmes,"Film + $i")
             recyclerView.adapter = CustomRecyclerAdapter(Filmes.toList())
         }
 
@@ -45,9 +46,13 @@ class podborka2 : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = CustomRecyclerAdapter(fillList())
         recyclerView.adapter = CustomRecyclerAdapter(getCatList())
-        for (i in 1..10)
+        for (i in 1..5)
             Filmes = da(Filmes,"Film + $i")
         recyclerView.adapter = CustomRecyclerAdapter(Filmes.toList())
+    }
+
+    fun DelProp(view: View){
+
     }
 
     fun da(arr: Array<String>, element: String): Array<String> {
